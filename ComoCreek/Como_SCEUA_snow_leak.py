@@ -15,13 +15,13 @@ class spotpy_setup():
     # the __init__ runs just once at the begining of the optimization
     def __init__(self):
 	# define the run number
-	self.num = '36'
+	self.num = '39'
 	self.maxflow = 20 # max streamflow [mm] needed for the leakage computation
 #        # define the parameters for the model
 
 	self.params = [spotpy.parameter.Uniform('gw1',0.0,1.0),
 		    spotpy.parameter.Uniform('gw2',0.0,1.0),
-		    spotpy.parameter.Uniform('sd',0.001,50.),
+		    spotpy.parameter.Uniform('sd',0.001,2.),
 		    spotpy.parameter.Uniform('m',0.01,30.),
 		    spotpy.parameter.Uniform('ksat',0.001,600.),
 		    spotpy.parameter.Uniform('crd',0.01,2.0),
